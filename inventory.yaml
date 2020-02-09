@@ -1,0 +1,11 @@
+version: 2
+
+groups:
+    - name: linux
+      targets:
+          - iceberg.usxmq.forgue.io
+          - orion.usxmq.forgue.io
+    - name: openbsd
+      targets:
+          - polar.usxmq.forgue.io
+          - arctic.forgue.io
