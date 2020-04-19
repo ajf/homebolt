@@ -18,8 +18,17 @@ plan profiles::linux(
 
     letsencrypt::certonly { $fqdn: }
 
-    package { ['ssl-cert', 'tmux']:
+    package { ['ssl-cert', 'tmux', 'vim-tiny']:
       ensure => latest,
+    }
+
+    apt::setting {
+      'conf-noreccommends':
+        priority => 99,
+        content  => @("EOF"/L)
+         APT::Install-Suggests "0";
+         APT::Install-Reccomends "0";
+        | EOF
     }
 
     # Switch to systemd-timesyncd
