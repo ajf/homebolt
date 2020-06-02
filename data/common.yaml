@@ -12,6 +12,12 @@ letsencrypt::config:
     email: andrew@forgue.io
     server: 'https://acme-v02.api.letsencrypt.org/directory'
 
+primary_interface:
+    "iceberg.usxmq.forgue.io": "enp101s0f0"
+    "orion.usxmq.forgue.io": "enp2s0f0"
+
+ohmyzsh::source: 'https://github.com/ohmyzsh/ohmyzsh.git'
+
 ohmyzsh::installs:
     andrew:
         set_sh: true

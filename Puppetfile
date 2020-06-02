@@ -7,6 +7,8 @@ mod 'saz/sudo'
 mod 'puppetlabs-ntp'
 mod 'puppetlabs-inifile'
 
+mod 'hiera_vault', :git => 'https://github.com/petems/petems-hiera_vault'
+
 mod 'camptocamp-systemd'
 mod 'rehan-ohmyzsh'
 mod 'ploperations-zsh'
